@@ -1,0 +1,34 @@
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+sudo: required
+
+services:
+  - docker
+
+language: node_js
+node_js:
+  - 8
+
+install:
+  - npm install
+  - npm install -g codecov
+
+cache:
+  directories:
+    - "node_modules"
+
+script:
+  - npm run coverage
+  - codecov
+
+after_success:
+  - bash Dockerbuild.sh
+
+deploy:
+  provider: script
+  script: bash Dockerpush.sh
+  on:
+    branch: master

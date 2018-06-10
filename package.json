@@ -1,0 +1,72 @@
+{
+  "name": "micro-rest",
+  "description": "Boilerplate for NodeJS Microservice",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "boiplerplate"
+  ],
+  "author": {
+    "name": "Ai Nguyen",
+    "email": "ainguyenkaka@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run jest",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "nodemon ./src --exec babel-node",
+    "build": "babel -d ./build ./src -s --presets minify --ignore '**/*.spec.js'",
+    "prod": "npm run build && env NODE_ENV=production node build/",
+    "jest": "jest --config test/unit/jest.conf.js",
+    "coverage": "jest --config test/unit/jest.conf.js --coverage"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "config": "^1.30.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.1.1",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.4.3",
+    "codecov": "^3.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.1.0",
+    "nodemon": "^1.17.5",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "delay": "2500"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

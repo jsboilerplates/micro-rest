@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "static": "../static/",
+  "404": "../static/404.html",
+  "favicon": "../static/favicon.ico"
+}
