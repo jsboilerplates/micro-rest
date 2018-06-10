@@ -7,7 +7,7 @@ describe('App tests', () => {
   })
 
   describe('ErrHandler tests', () => {
-    test('It should response the 404 statu', () => {
+    it('It should response the 404 statu', () => {
       return request(app).get('/something').then((response) => {
         expect(response.statusCode).toBe(404)
       })
@@ -18,7 +18,7 @@ describe('App tests', () => {
     app.get('/error', function (req, res) {
       throw new Error('BROKEN')
     })
-    test('It should response 500 status', () => {
+    it('It should response 500 status', () => {
       return request(app).get('/error').then((response) => {
         expect(response.statusCode).toBe(500)
       })

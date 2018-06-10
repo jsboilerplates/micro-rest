@@ -39,7 +39,7 @@ describe('Middleware tests', () => {
       expect(actual).toBeInstanceOf(Function)
     })
 
-    test('It should response the GET method', () => {
+    it('It should response the GET method', () => {
       return request(app).get('/').then((response) => {
         expect(response.statusCode).toBe(200)
       })

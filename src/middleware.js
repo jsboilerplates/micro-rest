@@ -1,7 +1,6 @@
 
 import config from 'config'
 import util from './util'
-import logger from 'winston'
 import compression from 'compression'
 import helmet from 'helmet'
 import cors from 'cors'
