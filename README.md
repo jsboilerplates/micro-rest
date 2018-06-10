@@ -1,6 +1,8 @@
 # Boilerplate for REST Microservice in NodeJS
 [![Build Status](https://travis-ci.org/jsboilerplates/micro-rest.svg?branch=master)](https://travis-ci.org/jsboilerplates/micro-rest)
 [![codecov](https://codecov.io/gh/jsboilerplates/micro-rest/branch/master/graph/badge.svg)](https://codecov.io/gh/jsboilerplates/micro-rest)
+[![dependencies Status](https://david-dm.org/jsboilerplates/micro-rest/status.svg)](https://david-dm.org/jsboilerplates/micro-rest)
+[![devDependencies Status](https://david-dm.org/jsboilerplates/micro-rest/dev-status.svg)](https://david-dm.org/jsboilerplates/micro-rest?type=dev)
 [![](https://images.microbadger.com/badges/image/jsboilerplates/micro-rest.svg)](https://microbadger.com/images/jsboilerplates/micro-rest)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsboilerplates/micro-rest/blob/master/LICENSE)
 
