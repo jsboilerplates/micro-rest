@@ -52,7 +52,7 @@ bash Dockerbuild.sh
 Run docker container
 
 ```
-docker run -d --name micronodejs -p 3030:3030 jsboilerplates/micro-rest
+docker run -d --name micro-rest -p 3030:3030 jsboilerplates/micro-rest
 ```
 
 ## Contributing

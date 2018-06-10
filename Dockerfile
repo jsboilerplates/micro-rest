@@ -6,7 +6,9 @@ COPY package*.json ./
 
 RUN npm install --only=production
 
-COPY . .
+ADD ./config ./config
+ADD ./build ./build
+ADD ./static ./static
 
 EXPOSE 3030
 

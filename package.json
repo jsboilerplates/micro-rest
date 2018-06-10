@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "homepage": "",
   "main": "src",
+  "license": "MIT",
+  "repository": "https://github.com/jsboilerplates/micro-rest",
   "keywords": [
     "boiplerplate"
   ],
