@@ -8,7 +8,7 @@
 
 ## Features
 - REST API with Swagger UI
-- Middlewares (compress, helmet, cors, favicon, etc)
+- Middlewares (compress, helmet, cors, favicon, body parser and static)
 - Unit Test with Jest
 - ES6, ESLint
 - CI with Travis, Docker Build
