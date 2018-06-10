@@ -1,10 +1,16 @@
 FROM node:8-alpine
 
-WORKDIR /app
-COPY . /app
+WORKDIR /usr/src/app
 
-RUN npm install
+COPY package*.json ./
+
+RUN npm install --only=production
+
+RUN npm run build
+
+COPY . .
+
 EXPOSE 3030
 
-CMD ["node", "src"]
+CMD ["node", "build"]
 
