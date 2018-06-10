@@ -25,6 +25,7 @@ script:
   - codecov
 
 after_success:
+  - npm run build
   - bash Dockerbuild.sh
 
 deploy:
