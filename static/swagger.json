@@ -1,0 +1,59 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "REST Service",
+    "version": "0.0.0",
+    "title": "REST Service"
+  },
+  "basePath": "/",
+  "tags": [{
+    "name": "sample"
+  }],
+  "schemes": ["http","https"],
+  "paths": {
+    "/api/samples": {
+      "get": {
+        "tags": ["sample"],
+        "summary": "get samples",
+        "description": "get all samples",
+        "operationId": "getSamples",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "samples"
+          },
+          "400": {
+            "description": "bad result"
+          }
+        }
+      }
+    },
+    "/api/samples/name/{keyword}": {
+      "get": {
+        "tags": ["sample"],
+        "summary": "get samples",
+        "description": "get all samples by name matched with keyword",
+        "operationId": "getSamplesByName",
+        "produces": ["application/json"],
+        "parameters": [{
+          "name": "keyword",
+          "in": "path",
+          "description": "Keyword of sample name",
+          "required": true,
+          "type": "string",
+          "format": "string"
+        }],
+        "responses": {
+          "200": {
+            "description": "samples"
+          },
+          "400": {
+            "description": "bad result"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
